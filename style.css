@@ -1,0 +1,41 @@
+body{
+    margin: 0%;
+}
+
+h1{
+    margin: 0;
+}
+
+.header{
+    background-color: orange;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head_img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+
+}
+
+.shop_sec{
+    display: flex;
+}
+
+#menues{
+height: 200px;
+width: 100%;
+background-color: blue;
+}
+
+#shoping_cart{
+    height: 200px;
+    width: 300px;
+    background-color: lightblue;
+    position: sticky;
+}
