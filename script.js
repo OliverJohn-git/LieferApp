@@ -10,9 +10,9 @@ function renderCategory(){
     for (let i = 0; i < menus.length; i++) {
         const dishcategory = menus[i].category;
 
-        if(menus[i].rendert === false){
-            let a =  menus[i].rendert;
+        if(menus[i].rendert = false){
             categoryContent.innerHTML += categoryTemp(dishcategory);
+            menus[i].rendert = true 
         }else{
         }
         renderDish(dishcategory);
@@ -32,3 +32,14 @@ function renderDish(dishcategory){
     }
 }
 
+function renderCart(){
+    let cartContent = document.getElementById("shoping_cart")
+    cartContent.innerHTML="";
+
+    for (let i = 0; i < menus.length; i++) {
+        const cartDish = menus[i].inCart;
+        
+        if(cartDish = false)
+            cartContent.innerHTML += cartTemp(cartDish)
+    }
+}
