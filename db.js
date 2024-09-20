@@ -1,0 +1,52 @@
+let menus= [
+    {
+        id:1,
+        category:"Pizza",
+        name:"Salami",
+        description:"Pizza mit Toamtensauce und Hausmacher Salami",
+        inCart:false,
+        amount:"",
+    },{
+        id:2,
+        category:"Pizza",
+        name:"Tono",
+        description:"Pizza mit Toamtensauce und Tunfisch",
+        inCart:false,
+        amount:"",
+    },{
+        id:3,
+        category:"FingerFood",
+        name:"Chickenstrips",
+        description:"panierte Chickenstrips",
+        inCart:false,
+        amount:"",
+    },{
+        id:4,
+        category:"Drinks",
+        name:"Fanta",
+        description:"",
+        inCart:false,
+        amount:"",
+    },{
+        id:5,
+        category:"Drinks",
+        name:"RedBull",
+        description:"",
+        inCart:false,
+        amount:"",
+    },{
+        id:6,
+        category:"Salat",
+        name:"Bauernsalat",
+        description:"hier könnte ihre Werbung stehen",
+        inCart:false,
+        amount:"",
+    },{
+        id:7,
+        category:"Desert",
+        name:"Ben and Jerry´s Eis",
+        description:"verschiedene Sorten",
+        inCart:false,
+        amount:"",
+    },
+]
