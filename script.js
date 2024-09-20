@@ -7,20 +7,28 @@ function renderCategory(){
     let categoryContent = document.getElementById("menues");
     categoryContent.innerHTML="";
 
-    for (let i = 1; i < menus.length; i++) {
-        const dishcategory = menus.category[i];
-        
-        categoryContent.innerHTML += categoryTemp(dishcategory);
+    for (let i = 0; i < menus.length; i++) {
+        const dishcategory = menus[i].category;
+
+        if(menus[i].rendert === false){
+            let a =  menus[i].rendert;
+            categoryContent.innerHTML += categoryTemp(dishcategory);
+        }else{
+        }
+        renderDish(dishcategory);
     }
+    
 }
 
-function renderDish(){
-    let dishContent = document.getElementsById("dish_place")
+function renderDish(dishcategory){
+    let dishContent = document.getElementById("dish_place");
     dishContent.innerHTML="";
 
     for (let i = 0; i < menus.length; i++) {
         const singleDish = menus[i];
-        
+
         dishContent.innerHTML += dishTemp(singleDish);
+        
     }
 }
+

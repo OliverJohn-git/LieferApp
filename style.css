@@ -28,9 +28,7 @@ h1{
 }
 
 #menues{
-height: 200px;
 width: 100%;
-background-color: blue;
 }
 
 #shoping_cart{
@@ -38,4 +36,29 @@ background-color: blue;
     width: 300px;
     background-color: lightblue;
     position: sticky;
+}
+/* dishes */
+.dish_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-color: black;
+    border-style: groove;
+}
+
+#picture_dish_temp{
+    height: 150px;
+    width: 200px;
+}
+
+#discription_dish_temp{
+    display: flex;
+    justify-content: center;
+}
+
+#atc_button_temp{
+    background-color:#91818A;
+    border-radius: 5px;
 }
