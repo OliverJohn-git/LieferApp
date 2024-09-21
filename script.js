@@ -28,18 +28,41 @@ function renderDish(dishcategory){
         const singleDish = menus[i];
 
         dishContent.innerHTML += dishTemp(singleDish);
-        
     }
 }
 
 function renderCart(){
-    let cartContent = document.getElementById("shoping_cart")
+    let cartContent = document.getElementById("shoping_cart");
     cartContent.innerHTML="";
 
     for (let i = 0; i < menus.length; i++) {
         const cartDish = menus[i].inCart;
         
-        if(cartDish = false)
-            cartContent.innerHTML += cartTemp(cartDish)
+        cartContent.innerHTML += cartTemp(cartDish);
     }
+}
+
+function amountUp(i){
+    let amountUp = menus[i].amount;
+    amountUp += 1;
+    
+    renderCart()
+}
+
+function amountDown(i){
+    let amountDown = menus[i].amount;
+    amountDown -=1;
+
+    if(menus[i].amount){
+        menus[i].amount == 0;
+        deleteDish(i);
+    }
+
+    renderCart()
+}
+
+function deleteDish(i) {
+    menus[i].inCart = false
+
+    renderCart()
 }

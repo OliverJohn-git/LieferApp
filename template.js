@@ -14,21 +14,21 @@ function dishTemp(singleDish){
             <img id="picture_dish_temp" src="${singleDish.picture}" alt="Ups! Something went wrong">
             <p id="discription_dish_temp">${singleDish.description}</p>
             <p id="price_dish_temp">${singleDish.price}€</p>
-            <button id="atc_button_temp" >Add to Cart</button>
+            <button onclick="amountUp(${i})" id="atc_button_temp" >Add to Cart</button>
         </div>
     `
 }
 
-function cartTemp(cartDish){
+function cartTemp(cartDish, i){
     return/*html*/`
         <h3>Warenkorb</h3>
         <div id="cart_name" >${cartDish.name}</div>
         <div id="cart_price"> ${cartDish.price}</div>
         <div class="amount_cart" >
-            <img src="./img/icon/minus.svg" alt="">
-            <p>${cartDish.amount}</p>
-            <img src="./img/icon/plus.svg" alt="">
-            <img src="./img/icon/trash_bin.svg" alt="">
+            <img onclick="amountDown(${i})" src="./img/icon/minus.svg" alt="">
+            <p id="cart_amount">${cartDish.amount}</p>
+            <img onclick="amountUp(${i})" src="./img/icon/plus.svg" alt="">
+            <img onclick="deleteDish(${i})" src="./img/icon/trash_bin.svg" alt="">
         </div>
     `
 }
