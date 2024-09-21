@@ -10,9 +10,9 @@ function renderCategory(){
     for (let i = 0; i < menus.length; i++) {
         const dishcategory = menus[i].category;
 
-        if(menus[i].rendert = false){
+        if(menus[i].rendert == false){
             categoryContent.innerHTML += categoryTemp(dishcategory);
-            menus[i].rendert = true 
+            menus[i].rendert == "true"; 
         }else{
         }
         renderDish(dishcategory);

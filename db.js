@@ -14,7 +14,7 @@ let menus= [
         category:"Pizza",
         "rendert":false,
         name:"Magaritha",
-        description:"Pizza mit Toamtensauce, Mozarella, Tomätchen und frischem Basilikum",
+        description:"Pizza mit Toamtensauce, Mozarella, <br> Tomätchen und frischem Basilikum",
         picture:"./img/pizza_magaritha.jpg",
         inCart:false,
         amount:0,
