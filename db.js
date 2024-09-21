@@ -2,7 +2,6 @@ let menus= [
     {
         id:1,
         category:"Pizza",
-        "rendert":false,
         name:"Salami",
         description:"Pizza mit Toamtensauce und Hausmacher Salami",
         picture:"./img/pizza_salami.jpg",
@@ -12,7 +11,6 @@ let menus= [
     },{
         id:2,
         category:"Pizza",
-        "rendert":false,
         name:"Magaritha",
         description:"Pizza mit Toamtensauce, Mozarella, <br> Tomätchen und frischem Basilikum",
         picture:"./img/pizza_magaritha.jpg",
@@ -22,7 +20,6 @@ let menus= [
     },{
         id:3,
         category:"FingerFood",
-        "rendert":false,
         name:"Chickenstrips",
         description:"panierte Chickenstrips",
         picture:"./img/chicken_strips.jpg",
@@ -32,7 +29,6 @@ let menus= [
     },{
         id:4,
         category:"Drinks",
-        "rendert":false,
         name:"Fanta",
         description:"",
         picture:"./img/fanta.jpg",
@@ -42,7 +38,6 @@ let menus= [
     },{
         id:5,
         category:"Drinks",
-        "rendert":false,
         name:"RedBull",
         description:"",
         picture:"./img/red_bull.jpg",
@@ -52,7 +47,6 @@ let menus= [
     },{
         id:6,
         category:"Salat",
-        "rendert":false,
         name:"Bauernsalat",
         description:"hier könnte ihre Werbung stehen",
         picture:"./img/farmers_salad.jpg",
@@ -62,7 +56,6 @@ let menus= [
     },{
         id:7,
         category:"Salat",
-        "rendert":false,
         name:"Ceasars",
         description:"hier könnte deine Werbung stehen Teil 2",
         picture:"./img/ceasar_salad.jpg",

@@ -1,33 +1,37 @@
 function init(){
-    renderCategory();
-    renderDish();
+    renderCategory()
 }
 
 function renderCategory(){
     let categoryContent = document.getElementById("menues");
     categoryContent.innerHTML="";
 
-    for (let i = 0; i < menus.length; i++) {
-        const dishcategory = menus[i].category;
+    const renderdCategorys = {};
 
-        if(menus[i].rendert == false){
+    for (let i = 0; i < menus.length; i++) {
+        let dishcategory = menus[i].category;
+
+        if(!renderdCategorys[dishcategory]){
+            renderdCategorys[dishcategory] = true;
+
             categoryContent.innerHTML += categoryTemp(dishcategory);
-            menus[i].rendert == "true"; 
-        }else{
+           
+            renderDish(dishcategory , i);
         }
-        renderDish(dishcategory);
+        
     }
     
 }
 
-function renderDish(dishcategory){
+function renderDish(dishcategory, i){
     let dishContent = document.getElementById("dish_place");
-    dishContent.innerHTML="";
 
-    for (let i = 0; i < menus.length; i++) {
-        const singleDish = menus[i];
+    for (let j = 0; j < menus.length; j++) {
+        const singleDish = menus[j];
 
-        dishContent.innerHTML += dishTemp(singleDish);
+        if(singleDish.category === dishcategory){
+        dishContent.innerHTML += dishTemp(singleDish, i);
+        }
     }
 }
 
@@ -42,27 +46,30 @@ function renderCart(){
     }
 }
 
-function amountUp(i){
-    let amountUp = menus[i].amount;
-    amountUp += 1;
-    
-    renderCart()
-}
+// function amountUp(i){
+//     let amount = menus[i].amount;
+//     if (menus[i].amount == 0) {
+        
+//     }else{
+//     amount +1;
+//     }
+//     renderCart()
+// }
 
-function amountDown(i){
-    let amountDown = menus[i].amount;
-    amountDown -=1;
+// function amountDown(i){
+//     let amountDown = menus[i].amount;
+//     amountDown -1;
 
-    if(menus[i].amount){
-        menus[i].amount == 0;
-        deleteDish(i);
-    }
+//     if(menus[i].amount){
+//         menus[i].amount == 0;
+//         deleteDish(i);
+//     }
 
-    renderCart()
-}
+//     renderCart()
+// }
 
-function deleteDish(i) {
-    menus[i].inCart = false
+// function deleteDish(i) {
+//     menus[i].inCart = false
 
-    renderCart()
-}
+//     renderCart()
+// }
