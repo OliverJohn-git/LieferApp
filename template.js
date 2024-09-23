@@ -2,12 +2,12 @@ function categoryTemp(dishcategory, i){
     return /*html*/`
     <div class="category_card">
         <h4 id="dish_category">${dishcategory}</h4>
-       <div id="dish_place${dishcategory[i]}"></div> 
+       <div id="dish_place${i}"></div> 
     </div>
     `
 }
 
-function dishTemp(singleDish,){
+function dishTemp(singleDish){
     return/*html*/`
         <div class="dish_card">
             <h5>${singleDish.name}</h5>

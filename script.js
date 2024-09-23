@@ -3,7 +3,7 @@ function init(){
 }
 
 function renderCategory(){
-    let categoryContent = document.getElementById("menues");
+    let categoryContent = document.getElementById(`menues`);
     categoryContent.innerHTML="";
 
     const renderdCategorys = {};
@@ -14,7 +14,7 @@ function renderCategory(){
         if(!renderdCategorys[dishcategory]){
             renderdCategorys[dishcategory] = true;
 
-            categoryContent.innerHTML += categoryTemp(dishcategory);
+            categoryContent.innerHTML += categoryTemp(dishcategory, i);
            
             renderDish(dishcategory , i);
         }
@@ -24,7 +24,7 @@ function renderCategory(){
 }
 
 function renderDish(dishcategory, i){
-    let dishContent = document.getElementById("dish_place");
+    let dishContent = document.getElementById(`dish_place${i}`);
 
     for (let j = 0; j < menus.length; j++) {
         const singleDish = menus[j];
@@ -36,7 +36,7 @@ function renderDish(dishcategory, i){
 }
 
 function renderCart(){
-    let cartContent = document.getElementById("shoping_cart");
+    let cartContent = document.getElementById(`shoping_cart`);
     cartContent.innerHTML="";
 
     for (let i = 0; i < menus.length; i++) {
