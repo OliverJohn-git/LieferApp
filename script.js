@@ -44,13 +44,13 @@ function renderCart(){
         for (let c = 0; c < shoping_cart.length; c++) {
         const cartItems = shoping_cart[c];
 
-        cartItems.innerHTML+=cartTemp(cartItems, c)
+        cartItems.innerHTML +=cartTemp (cartItems, c)
 
         };
     }
 }
 
-function addToBasket(){
+function addToBasket(i){
     
     let dishToCart = menus.find(item => item.id);
 
