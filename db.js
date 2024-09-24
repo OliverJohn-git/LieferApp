@@ -63,5 +63,7 @@ let menus= [
         amount:0,
         price:4.99,
     },
-];
+]
+
+let shoping_cart=[]
 

@@ -37,6 +37,17 @@ width: 100%;
     background-color: lightblue;
     position: sticky;
 }
+
+.amount_cart{
+    display: flex;
+    gap: 5px;
+}
+
+.cart_amount_btn{
+    height: 20px;
+    width: 20px;
+}
+
 /* dishes */
 .dish_card{
     display: flex;
